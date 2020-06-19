@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 #CHANGING THE COLOR
-echo -e"[\e[34mINFO\e[0m] MESSAGE";
+#echo -e"[\e[34mINFO\e[0m] MESSAGE";
 #for bold
-echo -e"[\e[1:34mINFO\e[0m] MESSAGE";
+#echo -e"[\e[1:34mINFO\e[0m] MESSAGE";
 
 B="\e[1;34m"
 Y="\e[1;33m"
