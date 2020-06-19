@@ -1,1 +1,10 @@
-Hello world
+#Shell Scripting
+She-bang
+Comments
+Print
+Vatiables
+Inputs
+Redirectors, Exit States, Quotes
+Functions
+Conditions
+Loops
