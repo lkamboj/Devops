@@ -11,7 +11,7 @@ R="\e[1;31m"
 
 PRINT() {
 
-  ECHO -E "[${B}INF${N}] $1"
+  echo -e "[${B}INF${N}] $1"
 
 }
 
