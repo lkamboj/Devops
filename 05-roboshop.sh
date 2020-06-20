@@ -20,5 +20,20 @@ for COMPONENT in ${COMPONENETS} ; do
   PRINT "SETUP ${COMPONENT}"
 done
 
+COMPONENT=$1
+
+case ${COMPONENT} in
+
+    MONGODB)
+    PRINT "SETUP ${COMPONENT}"
+    ;;
+    MYSQL)
+    PRINT "SETUP ${COMPONENT}"
+    ;;
+    REDIS)
+    PRINT "SETUP ${COMPONENT}"
+    ;;
+esac
+
 #echo -e "${B}[INF]${N}] SETUP MONGODB"
 
