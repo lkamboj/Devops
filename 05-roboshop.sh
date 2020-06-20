@@ -11,10 +11,8 @@ N="\e[0m"
 R="\e[1;31m"
 
 echo -e "[${B}INFO${N}] MESSAGE"
-
-#echo -e"[${B}"INFOR${N}] MESSAGE"
-echo -e"[${Y}"WAR${N}] WARNING"
-echo -e"[${R}"ERR${N}] ERROR"
+echo -e "[${Y}WAR${N}] WARNING"
+echo -e "[${R}ERR${N}] ERROR"
 
 
 
