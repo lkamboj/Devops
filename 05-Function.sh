@@ -28,9 +28,11 @@ f() {
   a=100
   echo a=${a}
   echo I am a function, I can call the variables from main program, b =${b}
+
   b=200
   echo
 }
+
 
 b=400
 f
