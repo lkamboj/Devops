@@ -16,7 +16,7 @@ case variable in
 esac
 commants
 
-fruit_name=apple
+fruit_name=banana
 
 case $fruit_name in
        apple)
