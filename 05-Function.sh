@@ -28,8 +28,8 @@ f() {
   a=100
   echo a=${a}
   echo I am a function, I can call the variables from main program, b =${b}
-  echo First Argument = $1
-  echo Second Argument =$2
+  echo First = $1
+  echo Second =$2
   echo I am function, But I will still use script name in my function
   echo Script name = $0
 }
