@@ -23,16 +23,10 @@ done
 COMPONENT=$1
 
 case ${COMPONENT} in
+      MONGODB|MYSQL|RABBITMQ|FRONTEND|CART|CATALOGUE)
+      PRINT "SETUP ${COMPONENT}"
+      ;;
 
-    MONGODB)
-    PRINT "SETUP ${COMPONENT}"
-    ;;
-    MYSQL)
-    PRINT "SETUP ${COMPONENT}"
-    ;;
-    REDIS)
-    PRINT "SETUP ${COMPONENT}"
-    ;;
 esac
 
 #echo -e "${B}[INF]${N}] SETUP MONGODB"
