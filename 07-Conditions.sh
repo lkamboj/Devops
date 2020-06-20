@@ -16,7 +16,9 @@ case variable in
 esac
 commants
 
-case fruit_name in
+fruit_name = apple
+
+case $fruit_name in
        apple)
          echo Fruit name is Apple
          ;;
