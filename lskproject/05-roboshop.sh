@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # $0 is teh script location
-basedir $0
+dirname $0
 
 B="\e[1;34m"
 Y="\e[1;33m"
