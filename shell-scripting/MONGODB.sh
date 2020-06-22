@@ -2,5 +2,3 @@
 
 echo "SETTING MONGODB"
 
-
-
