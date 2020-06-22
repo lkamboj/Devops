@@ -2,22 +2,24 @@
 
 source $(dirname $0)/common.sh
 
+<<commentout
 #B="\e[1;34m"
 #Y="\e[1;33m"
 #N="\e[0m"
 #R="\e[1;31m"
+commentout
 
 #echo -e "[${B}INF${N}] MESSAGE"
 #echo -e "[${Y}WAR${N}] WARNING"
 #echo -e "[${R}ERR${N}] ERROR"
 
-<<Print
+<<Print moved this block to source
 PRINT() {
   echo -e "[${B}INF${N}] $1"
 }
 Print
 
-<<Error
+<<Error moved this block to source
 ERROR() {
   echo -e "[${R}ERROR${N}] $1"
 }
