@@ -30,6 +30,9 @@ case $(COMPONENT) in
     *)
     ERROR "INVALID ARGUMENT"
     ;;
-
-
 esac
+
+for component in $(COMPONENTS) ; do
+    PRINT "SETUP ${COMPONENT}"
+Done
+
