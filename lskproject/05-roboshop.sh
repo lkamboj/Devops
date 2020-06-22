@@ -1,22 +1,27 @@
 #!/usr/bin/env bash
 
+source $(dirname $0)/common.sh
 
-B="\e[1;34m"
-Y="\e[1;33m"
-N="\e[0m"
-R="\e[1;31m"
+#B="\e[1;34m"
+#Y="\e[1;33m"
+#N="\e[0m"
+#R="\e[1;31m"
 
 #echo -e "[${B}INF${N}] MESSAGE"
 #echo -e "[${Y}WAR${N}] WARNING"
 #echo -e "[${R}ERR${N}] ERROR"
 
+<<Print
 PRINT() {
   echo -e "[${B}INF${N}] $1"
 }
+Print
 
+<<Error
 ERROR() {
   echo -e "[${R}ERROR${N}] $1"
 }
+Error
 
 COMPONENT=$1
 
