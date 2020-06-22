@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# $0 is teh script location
-dirname $0
 
 B="\e[1;34m"
 Y="\e[1;33m"
@@ -38,6 +36,6 @@ fi
 
 for component in ${INSTALL_COMPONENT} ; do
   PRINT "SETUP ${component}"
-  sh $component.sh
+  sh $(dirname $0)/$component.sh
 done
 
