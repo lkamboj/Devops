@@ -26,7 +26,7 @@ else
     MONGODB|MYSQL|REDIS|RABBITMQ|FRONTEND|CART|CATALOGUE|USER|PAYMENT|SHIPPING|RATINGS|DISPATCH)
       INSTALL_COMPONENT=${COMPONENT}
       ;;
-     *)
+     *) #Anything else is *
       ERROR "Input is not supported"
       exit 1
       ;;
@@ -35,5 +35,6 @@ fi
 
 for component in ${INSTALL_COMPONENT} ; do
   PRINT "SETUP ${component}"
+  sh $component.sh
 done
 
