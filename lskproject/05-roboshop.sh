@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 
 source $(dirname $0)/common.sh
+#Source = Import
 
-#<<commentout
+export LOG_FILE=/tmp/roboshop.log
+rm -f ${LOG_FILE}
+#ANY LOG WRITTEN PREVIOUSLY WILL BE WIPED OFF AND NEW LOGS WILL BE REGISTERED.
+
+
+#<<commentout the above command replaces the below. it will pull this info from source instead.
 #B="\e[1;34m"
 #Y="\e[1;33m"
 #N="\e[0m"

@@ -6,8 +6,8 @@ Y="\e[1;33m"
 N="\e[0m"
 R="\e[1;31m"
 C="\e[1;36m"
+G="\e[1;32m"
 #Unicode Characters
-
 
 
 HEAD() {
@@ -21,4 +21,19 @@ PRINT() {
 
 ERROR() {
   echo -e "[${R}ERROR${N}] $1"
+}
+
+
+#SUCESS IS THE FIRST ARGUMENT SO $1
+SUCCESS() {
+  echo -e "[${G}SUC${N}] $1"
+}
+
+#STAT IS TEH SECOND ARGUMENT SO $2
+STAT() {
+  if [["$1" -EQ 0]]; THEN
+  SUCCESS "$2"
+  else
+  ERROR "$2"
+  fi
 }
