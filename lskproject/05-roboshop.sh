@@ -53,6 +53,6 @@ for component in ${INSTALL_COMPONENT} ; do
   HEAD "SETUP ${component}"
 
     # -x is the debug mode
-  sh  $(dirname $0)/$component.sh &>${LOG_FILE}
+  sh  $(dirname $0)/$component.sh 2>${LOG_FILE}
 done
 
