@@ -17,6 +17,7 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mongo.repo
 STAT $? "Setup MongoDB Repo"
 
+yum install mongo-org -y &>>${LOG_FILE}
 
 PRINT "START MONGODB SETUP"
 PRINT "END MONGODB SETUP"
