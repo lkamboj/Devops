@@ -52,6 +52,6 @@ for component in ${INSTALL_COMPONENT} ; do
 
   HEAD "SETUP ${component}"
 
-  sh $(dirname $0)/$component.sh
+  sh -x $(dirname $0)/$component.sh
 done
 
