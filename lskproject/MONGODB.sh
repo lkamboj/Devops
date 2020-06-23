@@ -4,6 +4,9 @@
 
 source $(dirname $0)/common.sh
 
+PRINT "START MONGODB SETUP"
+
+echo LOG = ${LOG_FILE}
 echo '[mongodb-org-4.2]
 name=MongoDB Repository
 baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.2/x86_64/
