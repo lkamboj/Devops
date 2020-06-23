@@ -35,5 +35,7 @@ STAT() {
   SUCCESS "$2"
   else
   ERROR "$2"
+  echo -e "\n\tScript Failed, Refer Log File ${LOG_FILE} for more information${R}\n"
+  exit 1
   fi
 }
