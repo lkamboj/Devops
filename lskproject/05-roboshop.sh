@@ -42,7 +42,10 @@ else
 fi
 
 for component in ${INSTALL_COMPONENT} ; do
-  PRINT "SETUP ${component}"
+  #PRINT "SETUP ${component}" Instead of Print use HEADing
+
+  HEAD "SETUP ${component}"
+
   sh $(dirname $0)/$component.sh
 done
 
