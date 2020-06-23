@@ -31,7 +31,7 @@ SUCCESS() {
 
 #STAT IS TEH SECOND ARGUMENT SO $2
 STAT() {
-  if [["$1" -EQ 0]]; then
+  if [[ "$1" -EQ 0 ]]; then
   SUCCESS "$2"
   else
   ERROR "$2"
